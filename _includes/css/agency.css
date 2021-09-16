@@ -971,10 +971,10 @@ body {
 
 
 /*
-/* 02. =hero section
+/* 02. =hero section / about section
 /* =================================================================== */
 
-section#hero {
+section#hero,section#about {
     padding: 0px 0px;
 }
 
@@ -1002,6 +1002,12 @@ section#hero {
 	position: relative;
 	padding-top: 66px;
 	padding-bottom: 102px;
+}
+
+.row #row-contact {
+    float: left;
+    width: 100%;
+    margin: 0px 0px;
 }
 
 /* hero slider */
@@ -1078,6 +1084,8 @@ section#hero {
 	padding-top: 120px;
 	border-bottom: 1px solid #15191d;
 	padding-bottom: 120px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #bbb;
 }
 
 .download .button {
