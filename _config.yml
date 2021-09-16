@@ -82,6 +82,40 @@ skills:
           Office &bull;Basic and Advanced System Tools and Utilities"
 
 
+# Experience Section
+experience:
+  - img: "img/about/4.png"
+    date: "July 2018 - Present"
+    organization: "VMock India Pvt. Ltd., Gurgaon, IN"
+    multiple:
+      - title: Principal Data Scientist (July 2021 - Present)
+        content:
+        - line: abc
+        - line: def
+      - title: Senior Data Scientist (December 2019 - July 2021)
+        content:
+        - line: uvw
+        - line: xyz
+      - title: Data Scientist (July 2018 - December 2019)
+        content:
+        - line: uvw
+        - line: xyz
+  - img: "img/about/5.png"
+    date: "May 2017 - July 2017"
+    organization: "Artifacia, Bangalore, IN"
+    single:
+      - title: Research Intern (ML)
+        content:
+        - line: xyz
+  - img: "img/about/6.jpg"
+    date: "May 2016 - July 2016"
+    organization: "Indian Institue of Technology (IIT), Delhi, IN"
+    single:
+      - title: Summer Research Intern (Supervised by Prof. Subhashis Banerjee)
+        content:
+        - line: xyz
+
+
 # Portfolio Sectionn
 portfolio:
   three_row:
