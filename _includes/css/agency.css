@@ -471,7 +471,7 @@ section h3.section-subheading {
     float: right;
     position: relative;
     width: 100%;
-    padding: 0 20px 0 100px;
+    padding: 0 20px 0 60px;
     text-align: left;
 }
 
@@ -616,7 +616,7 @@ section h3.section-subheading {
     }
 
     .timeline>li .timeline-panel {
-        padding: 0 20px 20px 100px;
+        padding: 0 20px 20px 60px;
     }
 
     .timeline>li .timeline-image {
@@ -630,7 +630,7 @@ section h3.section-subheading {
     }
 
     .timeline>li.timeline-inverted>.timeline-panel {
-        padding: 0 100px 20px 20px;
+        padding: 0 60px 20px 20px;
     }
 }
 
@@ -1084,6 +1084,8 @@ section#hero,section#about {
 	padding-top: 120px;
 	border-bottom: 1px solid #15191d;
 	padding-bottom: 120px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #bbb;
 }
@@ -1378,6 +1380,111 @@ section#hero,section#about {
 @media only screen and (max-width:1024px) {
 	#hero #more {
 		margin-left: -100px;
+	}
+
+}
+
+
+/*
+/* 02. = Education
+/* =================================================================== */
+section#education {
+    padding-bottom: 100px;
+}
+
+@media(min-width:768px) {
+    ul.timeline-left {
+        margin-left: -50%;
+    }
+}
+
+
+*
+/* 03. = Skills
+/* =================================================================== */
+section#skills {
+    padding-top: 20px;
+    font: 12px/54px "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#skills .row {
+	padding-top: 20px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#skills .row-header {
+	padding-top: 60px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.photo-mid {
+	background-image: url("../img/parallax-bg.jpg");
+	background-attachment: fixed;
+	height: 470px;
+}
+
+.three,
+.row .three {
+	width: 25%;
+}
+
+.column,
+.columns,
+.bgrid {
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+
+.column,
+.columns {
+	padding: 0 20px;
+}
+
+.column.centered,
+.columns.centered {
+	float: none;
+	margin: 0 auto;
+}
+
+.row.collapsed > .column,
+.row.collapsed > .columns,
+.column.collapsed,
+.columns.collapsed {
+	padding: 0;
+}
+
+[class*="column"] + [class*="column"]:last-child {
+	float: right;
+}
+
+[class*="column"] + [class*="column"].end {
+	float: right;
+}
+
+#skills .three {
+	height: 228px;
+}
+
+@media only screen and (max-width:850px) {
+	#skills .three {
+		width: 50% !important;
+	}
+	.photo-mid {
+		height: 650px;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	#skills .three {
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.photo-mid {
+		height: 970px;
 	}
 
 }
