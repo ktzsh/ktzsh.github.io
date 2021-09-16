@@ -1010,6 +1010,10 @@ section#hero,section#about {
     margin: 0px 0px;
 }
 
+.row .contact-details {
+    padding: 0px;
+}
+
 /* hero slider */
 #hero-slider {
 	margin: 120px 0 54px;
@@ -1404,6 +1408,7 @@ section#education {
 /* =================================================================== */
 section#skills {
     padding-top: 20px;
+    padding-bottom: 20px;
     font: 12px/54px "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -1487,4 +1492,12 @@ section#skills {
 		height: 970px;
 	}
 
+}
+
+
+/*
+/* 05. = Contact
+/* =================================================================== */
+section#contact {
+    padding-bottom: 80px;
 }

@@ -5,6 +5,10 @@ _site/
 .jekyll-metadata
 Gemfile
 Gemfile.lock
+_includes/.prettierrc
+node_modules/
+package-lock.json
+package.json
 
 # Windows image file caches
 Thumbs.db
