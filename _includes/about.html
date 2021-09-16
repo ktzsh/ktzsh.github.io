@@ -4,9 +4,12 @@
 
          <div class="twelve columns main-col">
 
-            <h1>About Me</h1>
+            <div class="row-header text-center">
+               <h2 class="section-heading">ABOUT ME</h2>
+               <br/>
+            </div>
 
-            <hr />
+            <!-- <hr /> -->
 
             {% assign about = site.about %}
             {% assign org_url = site.org_url %}
@@ -22,7 +25,7 @@
 
                <div class="columns contact-details">
 
-                  <h1>Contact Details</h1>
+                  <h3>CONTACT DETAILS</h3>
                   <p class="address">
                      {% assign author_name = site.title %}
                      <span>{{ author_name }}</span><br>
@@ -32,13 +35,6 @@
                      <span>kshitiz [dot] sharma [at] gmail [dot] com</span>
                   </p>
 
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a target="blank" href="{{ " /res/kshitiz-sharma-cv.pdf" | prepend: site.baseurl }}"
-                        class="button"><i class="fa fa-download"></i> Download CV</a>
-                  </p>
                </div>
 
             </div> <!-- end row -->
