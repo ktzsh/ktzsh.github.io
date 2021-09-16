@@ -7,113 +7,38 @@
         <h3 class="section-subheading text-muted">Highlights</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="#portfolioModal0" class="portfolio-link" data-toggle="modal">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i>
-            </div>
-          </div>
-          <img
-            src="img/portfolio/anguar-invasive.png"
-            class="img-responsive"
-            alt=""
-          />
-        </a>
-        <div class="portfolio-caption">
-          <h4>Invasive Fish of Canada</h4>
-          <p class="text-muted">Angularjs</p>
-        </div>
-      </div>
 
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i>
-            </div>
+    {% for item in site.portfolio.three_row %}
+    <div class="col-md-4 col-sm-6 portfolio-item">
+      <a href="{{ item.modal_id }}" class="portfolio-link" data-toggle="modal">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <i class="fa fa-plus fa-3x"></i>
           </div>
-          <img src="img/portfolio/fishmap.png" class="img-responsive" alt="" />
-        </a>
-        <div class="portfolio-caption">
-          <h4>FishMap</h4>
-          <p class="text-muted">Ruby on Rails / Google Maps</p>
         </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i>
-            </div>
-          </div>
-          <img
-            src="img/portfolio/structur3d.png"
-            class="img-responsive"
-            alt=""
-          />
-        </a>
-        <div class="portfolio-caption">
-          <h4>Structur3D Printing</h4>
-          <p class="text-muted">Web Design</p>
-        </div>
-      </div>
-
-      <!-- <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/portfolio.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Portfolio</h4>
-                        <p class="text-muted">Web Design</p>
-                    </div>
-                </div>          -->
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-sm-6 portfolio-item">
-        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i>
-            </div>
-          </div>
-          <img
-            src="img/portfolio/s3dproducts.png"
-            class="img-responsive"
-            alt=""
-          />
-        </a>
-        <div class="portfolio-caption">
-          <h4>Structur3D Printing</h4>
-          <p class="text-muted">Multimedia Creation</p>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-sm-6 portfolio-item">
-        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i>
-            </div>
-          </div>
-          <img
-            src="img/portfolio/poolparty.png"
-            class="img-responsive"
-            alt=""
-          />
-        </a>
-        <div class="portfolio-caption">
-          <h4>Pool Party Plus</h4>
-          <p class="text-muted">Web Design / Wordpress</p>
-        </div>
+        <img src="{{ item.thumbnail }}" class="img-responsive" alt="" />
+      </a>
+      <div class="portfolio-caption">
+        <h4>{{ item.heading }}</h4>
+        <p class="text-muted">{{ item.subheading }}</p>
       </div>
     </div>
+
+    {% endfor %} {% for item in site.portfolio.two_row %}
+    <div class="col-md-6 col-sm-6 portfolio-item">
+      <a href="{{ item.modal_id }}" class="portfolio-link" data-toggle="modal">
+        <div class="portfolio-hover">
+          <div class="portfolio-hover-content">
+            <i class="fa fa-plus fa-3x"></i>
+          </div>
+        </div>
+        <img src="{{ item.thumbnail }}" class="img-responsive" alt="" />
+      </a>
+      <div class="portfolio-caption">
+        <h4>{{ item.heading }}</h4>
+        <p class="text-muted">{{ item.subheading }}</p>
+      </div>
+    </div>
+    {% endfor %}
   </div>
 </section>

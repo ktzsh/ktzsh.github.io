@@ -1,0 +1,14 @@
+---
+layout: default
+modal-id: 1
+date: 2020-08-15
+img: "artwork/collage.png"
+alt: Sketches
+project-date: 2014-2021
+client: N/A
+clienturl: 
+projecturl: 
+category: Sketching
+description: Free hand sketces drawn by me
+
+---

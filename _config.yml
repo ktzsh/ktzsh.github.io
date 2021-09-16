@@ -82,6 +82,32 @@ skills:
           Office &bull;Basic and Advanced System Tools and Utilities"
 
 
+# Portfolio Sectionn
+portfolio:
+  three_row:
+    - thumbnail: "img/portfolio/artwork/collage.png"
+      heading: Sketching
+      subheading: Free-hand Sketching
+      modal_id: "#portfolioModal1"
+    - thumbnail: "img/portfolio/3dmodel/1.png"
+      heading: 3D Modelling
+      subheading: AutoDesk Maya
+      modal_id: "#portfolioModal2"
+    - thumbnail: "img/portfolio/houseday/collage.png"
+      heading: House Day Decoration
+      subheading: Themed Event
+      modal_id: "#portfolioModal3"
+  two_row:
+    - thumbnail: "img/portfolio/videos/sample.png"
+      heading: Animation and Video Editing
+      subheading: Adobe Flash and Video Editors
+      modal_id: "#portfolioModal4"
+    - thumbnail: "img/portfolio/website/sample.png"
+      heading: Web Design and Development
+      subheading: Jekyll, HTML, CSS, Javascript
+      modal_id: "#portfolioModal5"
+
+
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: fed136
