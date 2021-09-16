@@ -6,49 +6,15 @@
       <div id="hero-slider" class="flexslider">
         <ul class="slides">
           <!-- slide -->
+          {% for item in site.slider %}
           <li>
             <div class="flex-caption">
-              <h1 class="">Hi! I'm Kshitiz Sharma</h1>
+              <h1 class="">{{ item.heading}}</h1>
 
-              <h3 class="">Data Scientist and Problem Solver.</h3>
+              <h3 class="">{{ item.sub_heading }}</h3>
             </div>
           </li>
-
-          <!-- slide -->
-          <li>
-            <div class="flex-caption">
-              <h1 class="">
-                I am a working professional who is pursuing his passion for
-                Technology and Arts.
-              </h1>
-
-              <h3 class="">
-                With an adaptive mind and broad perspective I love facing
-                challenging problems and looking for creative solutions.
-              </h3>
-            </div>
-          </li>
-
-          <!-- slide -->
-          <li>
-            <div class="flex-caption">
-              <h1 class="">
-                Take a look at some of
-                <a class="smoothscroll" href="#projects" title="portfolio"
-                  >MY WORK</a
-                >
-                or
-                <a class="smoothscroll" href="#contact" title="contact us"
-                  >GET IN TOUCH</a
-                >.
-              </h1>
-
-              <h3 class="">
-                My works vary from technical engineering projects to mind
-                refreshing artworks.
-              </h3>
-            </div>
-          </li>
+          {% endfor %}
         </ul>
       </div>
       <!-- end hero-slider -->

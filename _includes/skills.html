@@ -4,39 +4,14 @@
       <h2>TECHNICAL SKILLS</h2>
     </div>
     <div class="row">
+      {% for group in site.skills %}
       <div class="three columns main-col">
-        <h3>MACHINE LEARNING</h3>
+        <h3>{{ group.title }}</h3>
         <p>
-          Python &bull;C/C++<br />
-          Keras &bull;Tensorflow &bull;Caffe<br />
-          Darknet &bull;OpenCV &bull;Matlab
+          {{ group.list }}
         </p>
       </div>
-      <div class="three columns main-col">
-        <h3>PROGRAMMING</h3>
-        <p>
-          Python &bull;C/C++ &bull;Java &bull;Ocaml <br />
-          Android Application Development <br />
-          Frameworks and Libraries: <br />
-          OpenCV &bull;Swing &bull;LaTeX<br />
-        </p>
-      </div>
-      <div class="three columns main-col">
-        <h3>WEB, VFX, 3D, DESIGN</h3>
-        <p>
-          HTML &bull;CSS &bull;PHP &bull;JS &bull;JQuery <br />
-          Laravel, Bootstrap, Web2py<br />
-          Adobe Photoshop, After Effects &bull; Macromedia Flash<br />
-          Autodesk Maya, Inventor &bull;AutoCAD<br />
-        </p>
-      </div>
-      <div class="three columns main-col">
-        <h3>PLATFORM AND TOOLS</h3>
-        <p>
-          Windows &bull;Linux &bull;Android &bull;MacOS <br />
-          Office &bull;Basic and Advanced System Tools and Utilities
-        </p>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>

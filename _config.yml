@@ -3,23 +3,99 @@ title: Kshitiz Sharma
 email: kshitiz.sharma38@gmail.com
 description: "Kshitiz Sharma's Portfolio"
 
+# Postal address
+address:
+  - line: Adarsh Nagar, Ajmer
+  - line: Rajasthan, IN 305001
+
+
+# Hero Section
+slider:
+  - heading: "Hi! I'm Kshitiz Sharma"
+    sub_heading: "Data Scientist and Innovator."
+  - heading: "I am a working professional, pursuing his passion for
+              Technology and Arts."
+    sub_heading: "With an adaptive mind and broad perspective I love facing
+                  challenging problems and looking for elegant solutions."
+  - heading: 'Take a look at my
+                <a class="smoothscroll" href="#experience" title="experience">CAREER PATH</a>
+                and some of
+                <a class="smoothscroll" href="#portfolio" title="portfolio">MY CREATIVE WORK</a>
+                or
+                <a class="smoothscroll" href="#contact" title="contact us">GET IN TOUCH</a>.'
+    sub_heading: "My works vary from technical engineering projects to mind
+                  refreshing artworks."
+
+
+# About Section
+org: VMock India Pvt. Ltd.
+job: Principal Data Scientist
+org_url: https://www.vmock.com
+about: "With an adaptive mind and broad perspective I love facing challenging problems and looking for 
+        creative solutions. Currently pursuing my passion for Technology and Arts. My dream is to be a 
+        part of a technological breakthrough that has the potential to impact billion of lives."
+
+
+# Education Section
+education:
+  - img: "img/about/1.jpg"
+    date: "2014 - 2018"
+    university: "Indian Institue of Technology (IIT), Delhi, IN"
+    degree: "B.Tech. in Mathematics and Computing"
+    content:
+      - line: B.Tech. Project, Autonomous Object Tracking with UAVs
+      - line: Summer Research Student, Object Detection and Tracking for Driverless cars
+      - line: Web Management Coordinator, Alumni Affairs & International Programmes (AAIP)
+      - line: Fine Arts and Crafts Club (FAC) Representative, Zanskar Hostel
+  - img: "img/about/2.jpg"
+    date: "2012 - 2014"
+    university: "D.A.V. Public School, Kota, IN"
+    degree: "A.I.S.S.C.E - Science (Mathematics)"
+    content:
+      - line: Obtained 92.8% in All India Senior School Certificate Examination conducted by C.B.S.E.
+  - img: "img/about/3.jpg"
+    date: "2012"
+    university: "Mayoor School, Ajmer, IN"
+    degree: "A.I.S.S.E"
+    content:
+      - line: Obtained GPA of 10/10.
+
+
+# Skills Section
+skills:
+  - title: MACHINE LEARNING
+    list: "Python &bull;C/C++<br />
+          Keras &bull;Tensorflow &bull;Caffe<br />
+          Darknet &bull;OpenCV &bull;Matlab"
+  - title: PROGRAMMING
+    list: "Python &bull;C/C++ &bull;Java &bull;Ocaml <br />
+          Android Application Development <br />
+          Frameworks and Libraries: <br />
+          OpenCV &bull;Swing &bull;LaTeX<br />"
+  - title: WEB, VFX, 3D, DESIGN
+    list: "HTML &bull;CSS &bull;PHP &bull;JS &bull;JQuery <br />
+          Laravel, Bootstrap, Web2py<br />
+          Adobe Photoshop, After Effects &bull; Macromedia Flash<br />
+          Autodesk Maya, Inventor &bull;AutoCAD<br />"
+  - title: PLATFORM AND TOOLS
+    list: "Windows &bull;Linux &bull;Android &bull;MacOS <br />
+          Office &bull;Basic and Advanced System Tools and Utilities"
+
+
 # Color settings (hex-codes without the leading hash-tag)
 color:
   primary: fed136
-  secondary: fec503 
+  secondary: fec503
   secondary-dark: 000
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+
+# Social Links
 social:
-  - title: linkedin
-    url: https://www.linkedin.com/in/sharmakshitiz/
   - title: github
     url: http://github.com/ktzsh
+  - title: linkedin
+    url: https://www.linkedin.com/in/sharmakshitiz/
 
-# Postal address (add as many lines as necessary)
-address:
-  - line: Ajmer
-  - line: Rajasthan, IN 305001
 
 # Build settings
 markdown: kramdown

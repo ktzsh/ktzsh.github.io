@@ -8,13 +8,14 @@
 
             <hr />
 
-            <p>I graaduated from <a class="smoothscroll" href="#about">Indian Institue of Technology (IIT), Delhi</a> in
+            {% assign about = site.about %}
+            {% assign org_url = site.org_url %}
+            {% assign current_job = site.job %}
+            {% assign current_org = site.org %}
+            <p>I completed my graduation from <a class="smoothscroll" href="#about">Indian Institue of Technology (IIT), Delhi</a> in
                <a class="smoothscroll" href="#about">Mathematics and Computing</a> and I am currently working as a <a
-                  class="smoothscroll" href="#about">Principal Data Scientist</a> at <a class="smoothscroll"
-                  href="https://www.vmock.com">VMock India Pvt. Ltd.</a> With an adaptive mind and broad perspective I
-               love facing challenging problems and looking for creative solutions. Currently pursuing my passion for
-               Technology and Arts. My dream is to be a part of a technological breakthrough that has the potential to
-               impact billion of lives.
+                  class="smoothscroll" href="#about">{{ current_job }}</a> at <a class="smoothscroll"
+                  href="{{ org_url }}">{{ current_org }}</a> {{ about }}
             </p>
 
             <div class="row" id="row-contact">
@@ -23,10 +24,11 @@
 
                   <h1>Contact Details</h1>
                   <p class="address">
-                     <span>Kshitiz Sharma</span><br>
-                     <span>Adarsh Nagar, Ajmer<br>
-                        Rajasthan, IN 305001
-                     </span><br>
+                     {% assign author_name = site.title %}
+                     <span>{{ author_name }}</span><br>
+                     {% for line in site.address %}
+                        {{ line.line }}<br>
+                     {% endfor %}
                      <span>kshitiz [dot] sharma [at] gmail [dot] com</span>
                   </p>
 
