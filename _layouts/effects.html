@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <script>
+        function matrix() {
+            var canvas = document.getElementById("effect_canvas");
+
+            /* Rresize the canvas to occupy the full page, 
+            by getting the widow width and height and setting it to canvas*/
+            
+            canvas.width  = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            // const canvas = document.getElementById('canv');
+            const ctx = canvas.getContext('2d');
+
+            const w = canvas.width = document.body.offsetWidth;
+            const h = canvas.height = document.body.offsetHeight;
+            const cols = Math.floor(w / 20) + 1;
+            const ypos = Array(cols).fill(0);
+
+            ctx.fillStyle = '#000';
+            ctx.fillRect(0, 0, w, h);
+
+            function matrix () {
+                ctx.fillStyle = '#0001';
+                ctx.fillRect(0, 0, w, h);
+                
+                ctx.fillStyle = '#0f0';
+                ctx.font = '15pt monospace';
+                
+                ypos.forEach((y, ind) => {
+                    const text = String.fromCharCode(Math.random() * 128);
+                    const x = ind * 20;
+                    ctx.fillText(text, x, y);
+                    if (y > 100 + Math.random() * 10000) ypos[ind] = 0;
+                    else ypos[ind] = y + 20;
+                });
+            }
+            setInterval(matrix, 50);
+        };
+    </script>
+
+    <body id="page-top" class="index" onload="matrix()" style="background-color: black;">
+
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header page-scroll">
+                <button
+                  type="button"
+                  class="navbar-toggle"
+                  data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1"
+                >
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"></a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                  {% for network in site.social %}
+                  <li style="font-size: large; padding-top: 5px; padding-left: 20px">
+                    <a style="padding: 0px" href="{{ network.url }}"
+                      ><i class="fa fa-2x fa-{{ network.title }}"></i
+                    ></a>
+                  </li>
+                  {% endfor %}
+                  <li style="font-size: large; padding-top: 10px; padding-left: 20px">
+                    <a id="navbar-custom-toggle" style="padding: 5px" href="../index.html"
+                      >Go Back to Portfolio</a>
+                  </li>
+                </ul>
+          
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="hidden">
+                    <a href="#page-top"></a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="../index.html#about">About</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="../index.html#education">Education</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="../index.html#skills">Skills</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="../index.html#experience">Experience</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="../index.html#portfolio">Portfolio</a>
+                  </li>
+                  <li>
+                    <a class="page-scroll" href="../index.html#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    
+        <div style="display: table; position: absolute; top: 0; left: 0; height: 100%; width: 100%;">
+            <div style="  display: table-cell; vertical-align: middle;">
+                <div style="margin-left: auto; margin-right: auto; width: 400px; text-align: center;">
+                    <p style="text-transform: uppercase; font-family: Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif; font-weight: 600; letter-spacing: 1px; color: #fff; font-size: 40px;">Under Construction</p>
+                </div>
+            </div>
+        </div> 
+    <canvas id="effect_canvas">
+
+    
+
+    {% include js.html %}
+
+    </body>
+</html>
