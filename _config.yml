@@ -63,23 +63,25 @@ education:
 
 # Skills Section
 skills:
-  - title: MACHINE LEARNING
-    list: "Python &bull;C/C++<br />
-          Keras &bull;Tensorflow &bull;Caffe<br />
+  - title: MACHINE LEARNING FRAMEWORK
+    list: "Tensorflow & Keras &bull;PyTorch &bull;Caffe<br />
+          ONNX &bull;DeepSpeed &bull;Hugging Face<br />
           Darknet &bull;OpenCV &bull;Matlab"
   - title: PROGRAMMING
-    list: "Python &bull;C/C++ &bull;Java &bull;Ocaml <br />
-          Android Application Development <br />
-          Frameworks and Libraries: <br />
-          OpenCV &bull;Swing &bull;LaTeX<br />"
+    list: "Python &bull;C/C++ &bull;Java &bull;OCaml <br />
+          CUDA &bull;Golang &bull;LaTeX<br />
+          Android Application Development <br />"
+  - title: PLATFORM, TOOLS AND OTHER LIBRARIES
+    list: "MLFlow &bull; DVC &bull; AWS Console <br />
+          Celery &bull; Redis &bull; AWS SQS &bull; Git <br />
+          Docker &bull; Kubernetes <br />
+          SQLAlchemy &bull; MongoDB &bull; Elastic Cache"
   - title: WEB, VFX, 3D, DESIGN
     list: "HTML &bull;CSS &bull;PHP &bull;JS &bull;JQuery <br />
           Laravel, Bootstrap, Web2py<br />
+          Jekyll, Github Pages<br />
           Adobe Photoshop, After Effects &bull; Macromedia Flash<br />
           Autodesk Maya, Inventor &bull;AutoCAD<br />"
-  - title: PLATFORM AND TOOLS
-    list: "Windows &bull;Linux &bull;Android &bull;MacOS <br />
-          Office &bull;Basic and Advanced System Tools and Utilities"
 
 
 # Experience Section
@@ -90,30 +92,50 @@ experience:
     multiple:
       - title: Principal Data Scientist (July 2021 - Present)
         content:
-        - line: abc
-        - line: def
+        - line: Led all Data Science teams at VMock across all business verticals contributing to Technical Management and R&D processes.
+                Transformed the organizaion strucutre of Data Science teams, implemented Monorepo and MLOps practices using MLFLow and DVC. 
+        - line: Managed research team working on standardizing SOTA research to train and make large scale transformer models 
+                productionable using onnxruntime, deepspeed integrations, mixed precision training, quatization and gradient accumulation.
+                Subsequently adopted these models across various NLP problems within the company.
       - title: Senior Data Scientist (December 2019 - July 2021)
         content:
-        - line: uvw
-        - line: xyz
+        - line: "Led a team of 3 people overseeing all reviews, development, improvements, deployment and research projects for the Resume Parser Product."
+        - line: "Deployed production ready prediction models with Tensorflow Serving and implemented Async. Task Queue pipeline using Celery and AWS SQS."
+        - line: "Tasked with developing a multilingual parser capable of parsing resumes in French Language. Solved the Reverse Translation and 
+                Token Alignment problem using unsupervised IBM Model 1 and HMM models like Berkeley Aligner and string-matching heuristics using Levenshtein distance."
+        - line: "Worked on developing an in-house Joint Machine Translation and Token Alignment system using Mbart Transformer based encoder-decoer model."
       - title: Data Scientist (July 2018 - December 2019)
         content:
-        - line: uvw
-        - line: xyz
+        - line: "Tasked with improving and maintaining a robust resume parser that required converting unstructured data into
+                structured data and extracting useful information using techniques of NLP."
+        - line: "Trained in-house BiLSTM CRF based NERs with Character Embeddings and Attention Mechanism 
+                delivering high recall and precision for recognizing various entities as positions, organizations, locations, universities, 
+                degrees, section titles etc."
+        - line: "Built an unsupervised model using topic modeling technique LLDA and PLDA for fast super-section mappings in resume."
   - img: "img/about/5.png"
     date: "May 2017 - July 2017"
     organization: "Artifacia, Bangalore, IN"
     single:
       - title: Research Intern (ML)
         content:
-        - line: xyz
+        - line: Media Engagement Prediction - Predicting engagement (likes) on Instagram posts.
+        - line: Visual Recognition - Identifying objects and concepts in images to assign hashtags.
+        - line: Implemented Convolution Neural Network (CNN) and Recurrent Neural Network (RNN) Models for these problems in Keras and Tensorflow.
   - img: "img/about/6.jpg"
-    date: "May 2016 - July 2016"
+    date: "May 2016 - December 2018"
     organization: "Indian Institue of Technology (IIT), Delhi, IN"
-    single:
-      - title: Summer Research Intern (Supervised by Prof. Subhashis Banerjee)
+    multiple:
+      - title: "B.Tech. Project: Autonomous Object Tracking with UAVs"
         content:
-        - line: xyz
+        - line: "Developed an autonomous agent capable of tracking an object using techniques of Computer Vision and Deep Reinforcement Learning. 
+                Used Microsoft AirSim Simulator where a Drone was the tracker and a Car acted as an object to be tracked."
+      - title: "Summer Research Intern: Object Detection and Tracking for Driverless Cars"
+        content:
+        - line: "Developed a system to tackle the problem of object detection and tracking using computer vision and machine 
+                learning techniques. We explored slower region proposal based classification models (R-CNN and its variants 
+                - Fast, Faster R-CNN), and faster end-to-end regression based models (such as YOLO) for detection."
+        - line: "Subsequently, we used detection models for feature extraction and generating detection heatmaps along with 
+                LSTMs (Long Short Term Memory) to capture temporal information in sequences/videos for robust tracking and occlusion handling."
 
 
 # Portfolio Sectionn
