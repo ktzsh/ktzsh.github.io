@@ -179,6 +179,9 @@ social:
     url: https://www.linkedin.com/in/sharmakshitiz/
 
 
+# Google Analytics
+google_analytics: UA-207899879-1
+
 # Build settings
 markdown: kramdown
 permalink: pretty
