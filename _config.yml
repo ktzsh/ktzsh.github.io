@@ -64,13 +64,13 @@ education:
 # Skills Section
 skills:
   - title: MACHINE LEARNING FRAMEWORK
-    list: "Tensorflow & Keras &bull; PyTorch &bull; Caffe<br />
+    list: "Tensorflow & Keras &bull; PyTorch <br />
           ONNX &bull; DeepSpeed &bull; Hugging Face<br />
-          Darknet &bull; OpenCV &bull; Matlab"
+          Darknet &bull; OpenCV &bull; Matlab &bull; Caffe"
   - title: PROGRAMMING
     list: "Python &bull; C/C++ &bull; Java &bull; OCaml <br />
-          CUDA &bull; Golang &bull; LaTeX<br />
-          Android Application Development <br />"
+          CUDA &bull; OpenMP/MPI  &bull; LaTeX<br />
+           Golang &bull; Android Application Development <br />"
   - title: PLATFORM, TOOLS AND OTHER LIBRARIES
     list: "MLFlow &bull; DVC &bull; AWS Console <br />
           Celery &bull; Redis &bull; AWS SQS &bull; Git <br />
@@ -92,25 +92,29 @@ experience:
     multiple:
       - title: Principal Data Scientist (July 2021 - Present)
         content:
-        - line: Led all Data Science teams at VMock across all business verticals contributing to Technical Management and R&D processes.
-                Transformed the organizaion strucutre of Data Science teams, implemented Monorepo and MLOps practices using MLFLow and DVC. 
+        - line: Led all Data Science teams at VMock across all business verticals contributing to Technical Management and R&D 
+                processes. Transformed the organization structure of Data Science teams, implemented Monorepo and MLOps 
+                practices using MLFLow and DVC. 
         - line: Managed research team working on standardizing SOTA research to train and make large scale transformer models 
-                productionable using onnxruntime, deepspeed integrations, mixed precision training, quatization and gradient accumulation.
-                Subsequently adopted these models across various NLP problems within the company.
+                productionable using onnxruntime, deepspeed integrations, mixed precision training, quantization and gradient 
+                accumulation. Subsequently adopted these models across various NLP problems within the company.
       - title: Senior Data Scientist (December 2019 - July 2021)
         content:
-        - line: "Led a team of 3 people overseeing all reviews, development, improvements, deployment and research projects for the Resume Parser Product."
-        - line: "Deployed production ready prediction models with Tensorflow Serving and implemented Async. Task Queue pipeline using Celery and AWS SQS."
-        - line: "Tasked with developing a multilingual parser capable of parsing resumes in French Language. Solved the Reverse Translation and 
-                Token Alignment problem using unsupervised IBM Model 1 and HMM models like Berkeley Aligner and string-matching heuristics using Levenshtein distance."
-        - line: "Worked on developing an in-house Joint Machine Translation and Token Alignment system using Mbart Transformer based encoder-decoer model."
+        - line: "Led a team of 3 people overseeing all reviews, development, improvements, deployment and research projects for the 
+                Resume Parser Product."
+        - line: "Tasked with developing a multilingual parser capable of parsing resumes in French Language. Solved the Reverse 
+                Translation and Token Alignment problem using unsupervised IBM Model 1 and HMM models like Berkeley Aligner 
+                and string-matching heuristics using Levenshtein distance. Worked on developing an in-house Joint Machine 
+                Translation and Token Alignment system using MBart Transformer based encoder-decoder model."
+        - line: "Deployed production ready prediction models with TensorFlow Serving and implemented Async. Task Queue 
+                pipeline using Celery and AWS SQS. "
       - title: Data Scientist (July 2018 - December 2019)
         content:
-        - line: "Tasked with improving and maintaining a robust resume parser that required converting unstructured data into
+        - line: "Tasked with improving and maintaining a robust resume parser that required converting unstructured data into 
                 structured data and extracting useful information using techniques of NLP."
-        - line: "Trained in-house BiLSTM CRF based NERs with Character Embeddings and Attention Mechanism 
-                delivering high recall and precision for recognizing various entities as positions, organizations, locations, universities, 
-                degrees, section titles etc."
+        - line: "Trained in-house BiLSTM CRF based NERs with Character Embeddings and Attention Mechanism delivering high 
+                recall and precision for recognizing various entities as positions, organizations, locations, universities, degrees, section 
+                titles etc."
         - line: "Built an unsupervised model using topic modeling technique LLDA and PLDA for fast super-section mappings in resume."
   - img: "img/about/5.png"
     date: "May 2017 - July 2017"
@@ -118,24 +122,31 @@ experience:
     single:
       - title: Research Intern (ML)
         content:
-        - line: Media Engagement Prediction - Predicting engagement (likes) on Instagram posts.
-        - line: Visual Recognition - Identifying objects and concepts in images to assign hashtags.
-        - line: Implemented Convolution Neural Network (CNN) and Recurrent Neural Network (RNN) Models for these problems in Keras and Tensorflow.
+        - line: Media Engagement Prediction - Devised a framework for predicting the engagement (number of likes) over time, 
+                given an Instagram user handle and a query image. Using image features from a ConvNet and hand-crafted features
+                from User Profile (Follower’s count, Average Engagement, tagged users, day posted), created the entire pipeline systematically; 
+                from data collection, data preprocessing to training the model, evaluation, and deployment for a real-time production system.
+        - line: Visual Recognition - Implemented a Machine Learning algorithm to identify all the tags/labels relevant to a given image. Implemented an 
+                LSTM-based recurrent model for modelling label dependencies and label prediction and a VGG16 ConvNet for 
+                extracting image features (Trained on NUS-WIDE dataset). The model was capable of identifying both the co-
+                occurrence of labels, and the attention regions in images. Used Beam-Search algorithm for decoding at test time.
   - img: "img/about/6.jpg"
     date: "May 2016 - December 2018"
     organization: "Indian Institue of Technology (IIT), Delhi, IN"
     multiple:
       - title: "B.Tech. Project: Autonomous Object Tracking with UAVs"
         content:
-        - line: "Developed an autonomous agent capable of tracking an object using techniques of Computer Vision and Deep Reinforcement Learning. 
-                Used Microsoft AirSim Simulator where a Drone was the tracker and a Car acted as an object to be tracked."
+        - line: "Developed an autonomous agent capable of tracking an object using techniques of Computer Vision and Deep 
+                Reinforcement Learning. Implemented Q-Learning networks like DQN/Double DQN with Experience Replay and 
+                simulated the task with a drone tracking a car on the ground moving in simple motions, governed by real world like 
+                physics. Deployed a modified version of Microsoft AirSim Simulator for training and testing. "
       - title: "Summer Research Intern: Object Detection and Tracking for Driverless Cars"
         content:
-        - line: "Developed a system to tackle the problem of object detection and tracking using computer vision and machine 
-                learning techniques. We explored slower region proposal based classification models (R-CNN and its variants 
-                - Fast, Faster R-CNN), and faster end-to-end regression based models (such as YOLO) for detection."
-        - line: "Subsequently, we used detection models for feature extraction and generating detection heatmaps along with 
-                LSTMs (Long Short Term Memory) to capture temporal information in sequences/videos for robust tracking and occlusion handling."
+        - line: "Tackled the problem of object detection and tracking using machine learning algorithms. We explored slower region 
+                proposal based classification models (R-CNN and its variants - Fast, Faster R-CNN), and faster end-to-end 
+                regression based models (such as YOLO) for detection. Subsequently, leveraged detection models for feature 
+                extraction and generating detection heatmaps along with LSTMs (Long Short Term Memory) to capture temporal 
+                information in sequences/videos for robust tracking and occlusion handling. "
 
 
 # Portfolio Sectionn
