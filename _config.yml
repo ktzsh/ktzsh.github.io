@@ -74,7 +74,8 @@ skills:
   - title: PLATFORM, TOOLS AND OTHER LIBRARIES
     list: "MLFlow &bull; DVC &bull; AWS Console <br />
           Celery &bull; Redis &bull; AWS SQS &bull; Git <br />
-          Docker &bull; Kubernetes <br />
+          AWS Copilot &bull; AWS Fargate &bull; <br />
+          AWS Sagemaker &bull; Docker &bull; New Relic <br />
           SQLAlchemy &bull; MongoDB"
   - title: WEB, VFX, 3D, DESIGN
     list: "HTML &bull; CSS &bull; PHP &bull; JS &bull; JQuery <br />
@@ -92,29 +93,28 @@ experience:
     multiple:
       - title: Principal Data Scientist (July 2021 - Present)
         content:
-        - line: Led all Data Science teams at VMock across all business verticals contributing to Technical Management and R&D 
-                processes. Transformed the organization structure of Data Science teams, implemented Monorepo and MLOps 
-                practices using MLFLow and DVC. 
-        - line: Managed research team working on standardizing SOTA research to train and make large scale transformer models 
-                productionable using onnxruntime, deepspeed integrations, mixed precision training, quantization and gradient 
-                accumulation. Subsequently adopted these models across various NLP problems within the company.
+        - line: "Facilitated all Data Science teams at VMock across business verticals contributing to Technical Management and R&D."
+        - line: "Advised teams working on problems across Data Science domains such as Knowledge Graph, Language Generation, 
+                Video / Image Processing and Text Similarity and Retrieval."
+        - line: "Transformed the organization structure of Data Science teams and standardized Machine Learning development cycle using
+                tools like MLFLow, DVC, Monorepo and AWS Sagemaker."
+        - line: "Executed initiative to containerize all Machine Learning capabilities and set-up CI/CD pipelines and led research teams
+                working on standardizing research to train and make large scale transformer models production ready using Onnxruntime, 
+                Deepspeed integrations, Mixed Precision training, Quantization and Knowledge Distillation."
       - title: Senior Data Scientist (December 2019 - July 2021)
         content:
-        - line: "Led a team of 3 people overseeing all reviews, development, improvements, deployment and research projects for the 
-                Resume Parser Product."
-        - line: "Tasked with developing a multilingual parser capable of parsing resumes in French Language. Solved the Reverse 
-                Translation and Token Alignment problem using unsupervised IBM Model 1 and HMM models like Berkeley Aligner 
-                and string-matching heuristics using Levenshtein distance. Worked on developing an in-house Joint Machine 
-                Translation and Token Alignment system using MBart Transformer based encoder-decoder model."
-        - line: "Deployed production ready prediction models with TensorFlow Serving and implemented Async. Task Queue 
-                pipeline using Celery and AWS SQS. "
+        - line: "Supervised a team of 3 people overseeing all reviews, development, improvements, deployment and research projects 
+                for the Resume Parser Product."
+        - line: "Added multilingual parsing capability to the product. Solved the Reverse Translation and Token Alignment problem using 
+                unsupervised IBM Model 1 and HMM models like Berkeley Aligner. Worked on developing an in-house Joint Machine Translation
+                and Token Alignment system using Transformer based encoder-decoder model."
+        - line: "Deployed production ready models with TensorFlow Serving and implemented Async Task Queue pipeline using Celery and AWS SQS."
       - title: Data Scientist (July 2018 - December 2019)
         content:
-        - line: "Tasked with improving and maintaining a robust resume parser that required converting unstructured data into 
-                structured data and extracting useful information using techniques of NLP."
-        - line: "Trained in-house BiLSTM CRF based NERs with Character Embeddings and Attention Mechanism delivering high 
-                recall and precision for recognizing various entities as positions, organizations, locations, universities, degrees, section 
-                titles etc."
+        - line: "Improved and maintained a robust resume parser that required converting unstructured data into structured data and extracting
+                useful information using techniques of NLP."
+        - line: "Trained in-house BiLSTM CRF based NERs with Character Embeddings and Attention Mechanism delivering high recall and precision
+                for recognizing various entities as positions, organizations, locations, universities, degrees, section titles etc."
         - line: "Built an unsupervised model using topic modeling technique LLDA and PLDA for fast super-section mappings in resume."
   - img: "img/about/5.png"
     date: "May 2017 - July 2017"
