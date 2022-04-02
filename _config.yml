@@ -95,27 +95,31 @@ experience:
         content:
         - line: "Facilitated all Data Science teams at VMock across business verticals contributing to Technical Management and R&D."
         - line: "Advised teams working on problems across Data Science domains such as Knowledge Graph, Language Generation, 
-                Video / Image Processing and Text Similarity and Retrieval."
+                Video / Image Processing, NER and Text Similarity and Retrieval."
         - line: "Transformed the organization structure of Data Science teams and standardized Machine Learning development cycle using
-                tools like MLFLow, DVC, Monorepo and AWS Sagemaker."
+                tools like MLFLow, DVC, Monorepo and AWS Sagemaker reducing lead and cycle time KPIs."
         - line: "Executed initiative to containerize all Machine Learning capabilities and set-up CI/CD pipelines and led research teams
                 working on standardizing research to train and make large scale transformer models production ready using Onnxruntime, 
-                Deepspeed integrations, Mixed Precision training, Quantization and Knowledge Distillation."
+                Deepspeed integrations, Mixed Precision training, Quantization and Knowledge Distillation resulting in up to 2-3x speedup
+                in training and inference times on some workloads."
       - title: Senior Data Scientist (December 2019 - July 2021)
         content:
-        - line: "Supervised a team of 3 people overseeing all reviews, development, improvements, deployment and research projects 
-                for the Resume Parser Product."
+        - line: "Supervised a team of 3 people overseeing all research, development, reviews and deployment for the Resume Parser Capability, 
+                powering the flagship Resume Product used across more than 130+ Countries and in leading Educational Institutes such as CMU, 
+                UofT, Chicago Booth, University of Oxford, Columbia, Kellogg etc."
         - line: "Added multilingual parsing capability to the product. Solved the Reverse Translation and Token Alignment problem using 
                 unsupervised IBM Model 1 and HMM models like Berkeley Aligner. Worked on developing an in-house Joint Machine Translation
-                and Token Alignment system using Transformer based encoder-decoder model."
-        - line: "Deployed production ready models with TensorFlow Serving and implemented Async Task Queue pipeline using Celery and AWS SQS."
+                and Token Alignment system using Transformer based encoder-decoder model with 44 BLEU Score and AER of 7."
+        - line: "Deployed production ready models with TensorFlow Serving and implemented Async Task Queue pipeline using Celery and AWS SQS 
+                leading to more than 50% server cost reduction."
       - title: Data Scientist (July 2018 - December 2019)
         content:
         - line: "Improved and maintained a robust resume parser that required converting unstructured data into structured data and extracting
                 useful information using techniques of NLP."
         - line: "Trained in-house BiLSTM CRF based NERs with Character Embeddings and Attention Mechanism delivering high recall and precision
-                for recognizing various entities as positions, organizations, locations, universities, degrees, section titles etc."
-        - line: "Built an unsupervised model using topic modeling technique LLDA and PLDA for fast super-section mappings in resume."
+                for recognizing various entities (>92 % F1 Score) as positions, organizations, locations, universities, degrees, section titles etc."
+        - line: "Built an unsupervised model (Top-1 and Top-3 Accuaracies of 82 and 91 respectively) using topic modeling technique LLDA and PLDA
+                for fast super-section mappings in resume."
   - img: "img/about/5.png"
     date: "May 2017 - July 2017"
     organization: "Artifacia, Bangalore, IN"
