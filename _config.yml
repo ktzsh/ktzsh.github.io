@@ -117,7 +117,6 @@ experience:
   - img: "img/about/5.png"
     date: "May 2017 - July 2017"
     organization: "Artifacia, Bangalore, IN"
-    organization_description: ""
     single:
       - title: Research Intern (ML)
         content:
@@ -126,7 +125,6 @@ experience:
   - img: "img/about/6.jpg"
     date: "May 2016 - December 2018"
     organization: "Indian Institue of Technology (IIT), Delhi, IN"
-    organization_description: ""
     multiple:
       - title: "B.Tech. Project: Autonomous Object Tracking With Uavs"
         content:
