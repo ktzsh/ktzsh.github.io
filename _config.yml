@@ -47,6 +47,7 @@ education:
       - line: Summer Research Student, Object Detection and Tracking for Driverless cars
       - line: Web Management Coordinator, Alumni Affairs & International Programmes (AAIP)
       - line: Fine Arts and Crafts Club (FAC) Representative, Zanskar Hostel
+      - line: Hockey and Athletics 
   - img: "img/about/2.jpg"
     date: "2012 - 2014"
     university: "D.A.V. Public School, Kota, IN"
@@ -67,15 +68,15 @@ skills:
     list: "Tensorflow & Keras &bull; PyTorch <br />
           ONNX &bull; DeepSpeed &bull; Hugging Face<br />
           Nvidia Triton &bull; OpenCV &bull;"
-  - title: PROGRAMMING
+  - title: PROGRAMMING LANGUAGES
     list: "Python &bull; C/C++ &bull; Java &bull; OCaml <br />
           CUDA &bull; OpenMP/MPI  &bull; LaTeX &bull; ONNXjs<br />
            Golang &bull; Android Application Development <br />"
-  - title: PLATFORM, TOOLS AND OTHER LIBRARIES
+  - title: PLATFORM, TOOLS AND LIBRARIES
     list: "MLFlow &bull; DVC &bull; Kubernetes <br />
           Celery &bull; Redis &bull; AWS SQS &bull; Git <br />
-          AWS ECS &bull; AWS Fargate &bull; &bull; AWS Opensearch<br />
-          AWS Sagemaker &bull; Docker &bull; New Relic <br />
+          AWS ECS &bull; AWS Fargate &bull; Docker <br />
+          AWS Sagemaker &bull; AWS Opensearch &bull; New Relic <br />
           SQLAlchemy &bull; MongoDB"
   - title: WEB, VFX, 3D, DESIGN
     list: "HTML &bull; CSS &bull; PHP &bull; JS &bull; JQuery <br />
@@ -90,8 +91,10 @@ experience:
   - img: "img/about/4.png"
     date: "July 2018 - Present"
     organization: "VMock India Pvt. Ltd., Gurgaon, IN"
+    organization_description: "Career Analytics Platform powered by AI, revolutionizing the candidate-employer-university dynamics. Delivering a comprehensive suite of services including career coaching, instant feedback, intelligent hiring tools, smart editors, and career analytics. Empowering clients with a one-stop platform for unparalleled career success."
     multiple:
       - title: Principal Data Scientist (September 2021 - Present)
+        description: "Managed cross-functional Data Science teams (15 Data Scientists & Data Analysts) across business verticals, providing technical and stakeholder management and contributing to research and development of data driven solutions. Mentored teams working on diverse data science problems, including Ranking, Search, Retrieval, Analytics, Entity Recognition (NER), Large Language Models (LLMs), Language Generation (NLG), Grammar Correction (GEC), Computer Vision, Recommendation Systems and Ontologies."
         content:
         - line: "Restructured Data Science teams and streamlined machine learning development cycle using MLFLow, AWS Sagemaker, EKS, resulting in 20-40% improvements in lead and cycle times."
         - line: "Implemented containerization of machine learning applications, CI/CD Pipelines, Application Performance Monitoring (APM) & Code Inspection tools, Load Metrics, QA Automations for fault-tolerant and scalable systems thereby reducing infrastructure cost by over 50% for data science teams."
@@ -99,6 +102,7 @@ experience:
         - line: "Strategized new initiatives like BestMatch for intelligent hiring with explainable FitScores and SMART Interviews for in person interview practice featuring both verbal and non-verbal feedback."
         - line: "Developed a chatbot for VMock utilizing OpenSearch as a vector database and GPT3.5 API, showcasing conversational process similar to LangChain."
       - title: Senior Data Scientist (December 2019 - September 2021)
+        description: "Supervised a team of 3 people overseeing all research, development, reviews and deployment for the Resume Parser, powering the flagship Resume Product used across more than 130+ Countries and in leading Educational Institutes such as CMU, Stanford, Chicago Booth, University of Oxford, Columbia, Kellogg, INSEAD etc."
         content:
         - line: "Launched multilingual parsing capability, solving the Reverse Translation and Token Alignment problem using unsupervised IBM Model 1 and HMM models."
         - line: "Created an in-house Joint Machine Translation and Token Alignment system with a Transformer-based encoder-decoder model, achieving a 44 BLEU Score and a 7 AER."
@@ -106,6 +110,7 @@ experience:
         - line: "Implemented a high-speed N-gram super-section classifier with outstanding performance, boasting an impressive 81% top-1 accuracy and an exceptional 95% top-3 accuracy."
         - line: "Finetuned encoder LMs (BERT, RoBERTa) using PyTorch and Hugging Face for superior classification and entity recognition achieving 5-12% improvement over BiLSTM-CRF on various datasets."
       - title: Data Scientist (July 2018 - December 2019)
+        description: "Improved and maintained a robust resume parser that required converting unstructured data into structured data and extracting useful information using techniques of NLP."
         content:
         - line: "Trained in-house BiLSTM-CRF based NERs with Character Embeddings and Attention Mechanism delivering high recall and precision (>92 % F1 Score) for recognizing various entities as positions, organizations, locations, universities, degrees, section titles etc."
         - line: "Executed the migration of a complex codebase of ~50,000 lines from Python2 to Python3, ensuring compatibility and eliminating deprecated features, resulting in enhanced performance and maintainability."
